@@ -23,7 +23,7 @@
         <signals include="/Aircraft/Generic/flightrecorder/components/controls.xml"/>
         <signals include="/Aircraft/Generic/flightrecorder/components/environment.xml"/>
         <signals include="/Aircraft/Generic/flightrecorder/components/tanks.xml">
-            <count type="int">8</count> 
+            <count type="int">8</count>
         </signals>
 
         <!--  main rotor -->
@@ -41,7 +41,7 @@
             <signal>
                 <type>float</type>
                 <property type="string">/controls/engines/engine/throttle</property>
-            </signal>	
+            </signal>
             <signal>
                 <type>float</type>
                 <property type="string">roll-deg</property>

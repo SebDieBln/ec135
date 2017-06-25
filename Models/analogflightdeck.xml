@@ -28,8 +28,8 @@
                 <use>systems/electrical/outputs/instrument-lights-norm</use>
             </factor>
         </parameters>
-        <object-name>OverheadPanel</object-name> 
-    </effect>	
+        <object-name>OverheadPanel</object-name>
+    </effect>
 
     <model>
         <name>Pilot</name>
@@ -550,7 +550,7 @@
         </action>
     </animation>
 
-    <animation> 
+    <animation>
         <type>rotate</type>
         <object-name>instrlight.knob</object-name>
         <property>controls/lighting/instrument-lights-norm</property>
@@ -565,7 +565,7 @@
             <y>0</y>
             <z>-0.014589</z>
         </axis>
-    </animation>  
+    </animation>
 
     <animation>
         <type>pick</type>
@@ -599,7 +599,7 @@
         </action>
     </animation>
 
-    <animation> 
+    <animation>
         <type>rotate</type>
         <object-name>stbylight.knob</object-name>
         <property>controls/lighting/stdby-instrument-lights-norm</property>
@@ -614,7 +614,7 @@
             <y>0</y>
             <z>-0.014589</z>
         </axis>
-    </animation>  
+    </animation>
 
     <!-- third row-->
     <animation>
@@ -768,7 +768,7 @@
                 <min>0</min>
                 <max>3</max>
                 <wrap>1</wrap>
-            </binding>		  
+            </binding>
             <binding>
                 <command>property-toggle</command>
                 <property>/sim/sound/switch2</property>
@@ -784,7 +784,7 @@
                 <min>0</min>
                 <max>3</max>
                 <wrap>1</wrap>
-            </binding>		  
+            </binding>
             <binding>
                 <command>property-toggle</command>
                 <property>/sim/sound/switch2</property>
@@ -800,7 +800,7 @@
                 <min>0</min>
                 <max>3</max>
                 <wrap>1</wrap>
-            </binding>		  
+            </binding>
             <binding>
                 <command>property-toggle</command>
                 <property>/sim/sound/switch2</property>

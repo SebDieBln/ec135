@@ -414,7 +414,7 @@
         <object-name>StrobeVolumeRight</object-name>
         <object-name>StrobeVolumeLeft</object-name>
         <condition>
-            <property>/systems/electrical/outputs/strobe/state</property>	
+            <property>/systems/electrical/outputs/strobe/state</property>
         </condition>
     </animation>
 

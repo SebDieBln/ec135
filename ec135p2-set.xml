@@ -23,7 +23,7 @@ Thanks for all the help!
         <license>GPL v2</license>
 
         <tags>
-            <tag>eurocopter</tag>			
+            <tag>eurocopter</tag>
             <tag>helicopter</tag>
             <tag>2-engine</tag>
             <tag>1990s</tag>
@@ -61,7 +61,7 @@ Thanks for all the help!
 
         <multiplay n="0">
             <chat_display>1</chat_display>
-            <generic n="0">     
+            <generic n="0">
                 <float n="0" alias="/position/gear-agl-m"/>
                 <!-- rotor particles -->
                 <float n="1" alias="/orientation/pitch-deg"/>
@@ -100,7 +100,7 @@ Thanks for all the help!
                 <AnalogDual>true</AnalogDual>
                 <DigitalDual>false</DigitalDual>
                 <AnalogSingle>false</AnalogSingle>
-                <DigitalSingle>false</DigitalSingle>	
+                <DigitalSingle>false</DigitalSingle>
                 <HEMS>true</HEMS>
                 <VIP>false</VIP>
                 <Utility>false</Utility>
@@ -207,7 +207,7 @@ Thanks for all the help!
     </ai>-->
 
 
-        <rendering>	   
+        <rendering>
             <refl_correction type="string">-0.33</refl_correction>
             <refl-type>1.0</refl-type>
             <fresnel-factor>0.5</fresnel-factor>
@@ -218,7 +218,7 @@ Thanks for all the help!
             <runways>
                 <start-offset-m>3.3</start-offset-m>
             </runways>
-        </airport>		
+        </airport>
 
         <!--view-->
         <view n="0">
@@ -501,7 +501,7 @@ Thanks for all the help!
             <line>Mainpanel: engage now Engine switch II into idle</line>
             <line>Mainpanel: watch N1, TRQ, TOT and wait until both N1 needles reached 74%</line>
             <line>Mainpanel: switch Engine switches I + II into flight</line>
-            <line>Overhead: disengage both prime pumps PRIME I + II OFF</line>	
+            <line>Overhead: disengage both prime pumps PRIME I + II OFF</line>
             <line>Overhead: engage both transfer pumps XFER F + B ON</line>
             <line>Navlight, strobes, landlinglights, CAT-A as required</line>
             <line>The EC135 has to fly with SAS engaged all the times- disengaging will usually produce a caution warning on the real thing</line>
@@ -687,14 +687,14 @@ Thanks for all the help!
                 <delay-sec type="double" n="2">0</delay-sec>
                 <position-norm type="double">0.45</position-norm>
                 <switch type="int">0</switch>
-            </wiper>	 
+            </wiper>
         </electric>
 
 
     </controls>
 
     <systems>
-        <electrical>	
+        <electrical>
             <outputs>
                 <transfer-pump-aft>0</transfer-pump-aft>
                 <transfer-pump-forward>0</transfer-pump-forward>

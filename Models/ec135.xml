@@ -37,7 +37,7 @@
         <object-name>backdoorglas.L</object-name>
         <object-name>backdoorglas.R</object-name>
         <object-name>rearwin.L</object-name>
-        <object-name>rearwin.R</object-name>	
+        <object-name>rearwin.R</object-name>
     </effect>
 
     <effect>
@@ -1430,7 +1430,7 @@
         <object-name>Plane.001X0</object-name>
         <object-name>Plane.001X1</object-name>
         <condition>
-            <property>/systems/electrical/outputs/strobe/state</property>	
+            <property>/systems/electrical/outputs/strobe/state</property>
         </condition>
     </animation>
 

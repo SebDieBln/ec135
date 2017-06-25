@@ -30,9 +30,9 @@
                 <use>systems/electrical/outputs/stdby-instrument-lights-norm</use>
             </factor>
         </parameters>
-        <object-name>analogpanel</object-name> 
-        <object-name>Plane.066</object-name> 
-    </effect>	
+        <object-name>analogpanel</object-name>
+        <object-name>Plane.066</object-name>
+    </effect>
 
 
 
@@ -589,7 +589,7 @@
                 <command>property-adjust</command>
                 <property>/instrumentation/nav[0]/radials/selected-deg</property>
                 <step type="double">0.5</step>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -604,7 +604,7 @@
                 <command>property-adjust</command>
                 <property>/instrumentation/nav[0]/radials/selected-deg</property>
                 <step type="double">-0.5</step>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -648,7 +648,7 @@
                 <command>property-adjust</command>
                 <property>instrumentation/altimeter/setting-inhg</property>
                 <step type="double">-0.1</step>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -663,7 +663,7 @@
                 <command>property-adjust</command>
                 <property>instrumentation/altimeter/setting-inhg</property>
                 <step type="double">0.1</step>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -697,7 +697,7 @@
                 <command>property-adjust</command>
                 <property>/instrumentation/radar-altimeter/decision-height</property>
                 <step type="double">5</step>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -712,7 +712,7 @@
                 <command>property-adjust</command>
                 <property>/instrumentation/radar-altimeter/decision-height</property>
                 <step type="double">-5</step>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -730,7 +730,7 @@
                 <command>property-toggle</command>
                 <property>instrumentation/attitude-indicator/caged-flag</property>
                 <value type="bool">true</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -746,7 +746,7 @@
                 <command>property-assign</command>
                 <property>controls/engines/engine[0]/fadec/engine-state</property>
                 <value type="double">2</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -761,7 +761,7 @@
                 <command>property-assign</command>
                 <property>controls/engines/engine[0]/fadec/engine-state</property>
                 <value type="double">1</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -776,7 +776,7 @@
                 <command>property-assign</command>
                 <property>controls/engines/engine[0]/fadec/engine-state</property>
                 <value type="double">0</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -808,7 +808,7 @@
                 <command>property-assign</command>
                 <property>controls/engines/engine[1]/fadec/engine-state</property>
                 <value type="double">2</value>
-            </binding>           
+            </binding>
         </action>
     </animation>
 
@@ -823,7 +823,7 @@
                 <command>property-assign</command>
                 <property>controls/engines/engine[1]/fadec/engine-state</property>
                 <value type="double">1</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -838,7 +838,7 @@
                 <command>property-assign</command>
                 <property>controls/engines/engine[1]/fadec/engine-state</property>
                 <value type="double">0</value>
-            </binding>      
+            </binding>
         </action>
     </animation>
 
@@ -871,7 +871,7 @@
                 <command>property-toggle</command>
                 <property>controls/electric/engine[0]/generator</property>
                 <value type="bool">true</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -886,7 +886,7 @@
                 <command>property-assign</command>
                 <property>controls/electric/engine[0]/generator</property>
                 <value type="double">-1</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -919,7 +919,7 @@
                 <command>property-toggle</command>
                 <property>controls/electric/engine[1]/generator</property>
                 <value type="bool">true</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -934,7 +934,7 @@
                 <command>property-assign</command>
                 <property>controls/electric/engine[1]/generator</property>
                 <value type="double">-1</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -967,7 +967,7 @@
                 <command>property-toggle</command>
                 <property>/controls/electric/battery-switch</property>
                 <value type="bool">true</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -982,7 +982,7 @@
                 <command>property-assign</command>
                 <property>/controls/electric/battery-switch</property>
                 <value type="double">-1</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -1014,7 +1014,7 @@
                 <command>property-toggle</command>
                 <property>controls/engines/engine[0]/fadec/fadec-switch</property>
                 <value type="bool">true</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 
@@ -1048,7 +1048,7 @@
                 <command>property-toggle</command>
                 <property>controls/engines/engine[1]/fadec/fadec-switch</property>
                 <value type="bool">true</value>
-            </binding>          
+            </binding>
         </action>
     </animation>
 

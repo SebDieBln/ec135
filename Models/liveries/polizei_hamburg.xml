@@ -18,12 +18,12 @@
                 <AnalogDual>true</AnalogDual>
                 <DigitalDual>false</DigitalDual>
                 <AnalogSingle>false</AnalogSingle>
-                <DigitalSingle>false</DigitalSingle>	
+                <DigitalSingle>false</DigitalSingle>
                 <HEMS>true</HEMS>
                 <VIP>false</VIP>
                 <Utility>false</Utility>
                 <AnalogSingle>true</AnalogSingle>
-                <DigitalSingle>false</DigitalSingle>	
+                <DigitalSingle>false</DigitalSingle>
                 <HEMS>true</HEMS>
                 <VIP>false</VIP>
                 <Utility>false</Utility>
@@ -91,7 +91,7 @@
                 <reardoorR>true</reardoorR>
             </ec135>
         </model>
-        <rendering>	   
+        <rendering>
             <refl_correction type="string">-0.08</refl_correction>
             <refl-type>1.0</refl-type>
             <fresnel-factor>0.5</fresnel-factor>

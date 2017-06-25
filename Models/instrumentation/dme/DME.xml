@@ -24,12 +24,12 @@
     Maintainer: Torsten Dreyer 
    ********************************************************************** 
 -->
-<PropertyList>    
+<PropertyList>
 
     <path>dme-1.ac</path>
 
     <animation>
-        <type>material</type> 
+        <type>material</type>
         <object-name>SelectorKnob</object-name>
         <emission>
             <red>0.79</red>
@@ -37,7 +37,7 @@
             <blue>0.198</blue>
             <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
         </emission>
-    </animation>   
+    </animation>
 
     <!-- the source switch -->
     <animation>
@@ -53,7 +53,7 @@
             <y>0</y>
             <z>0</z>
         </axis>
-        <center>	  
+        <center>
             <x-m>0.0012</x-m>
             <y-m>-0.0</y-m>
             <z-m>-0.0108</z-m>
@@ -410,13 +410,13 @@
                     <property>instrumentation/dme[0]/indicated-ground-speed-kt</property>
                     <value>5.0</value>
                 </greater-than-equals>
-            </and>     
+            </and>
         </condition>
         <name>min_1_select</name>
         <type>select</type>
         <object-name>DME.mn1</object-name>
         <object-name>DME.mn2</object-name>
-    </animation> 
+    </animation>
 
     <animation>
         <name>min_10</name>
