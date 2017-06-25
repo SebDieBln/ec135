@@ -27,19 +27,19 @@
         <min-m>0</min-m>
         <max-m>10</max-m>
     </animation>
-    
+
     <animation>
-      <type>material</type>
-      <property-base>sim/model/material/cockpit</property-base>
-      <object-name>face</object-name>
-      <object-name>auto</object-name>
-      <object-name>direction</object-name>
-      <emission>
-        <red-prop>red</red-prop>
-        <green-prop>green</green-prop>
-        <blue-prop>blue</blue-prop>
-        <factor-prop>factor</factor-prop>
-      </emission>
+        <type>material</type>
+        <property-base>sim/model/material/cockpit</property-base>
+        <object-name>face</object-name>
+        <object-name>auto</object-name>
+        <object-name>direction</object-name>
+        <emission>
+            <red-prop>red</red-prop>
+            <green-prop>green</green-prop>
+            <blue-prop>blue</blue-prop>
+            <factor-prop>factor</factor-prop>
+        </emission>
     </animation>
 
     <animation>
@@ -76,7 +76,7 @@
             <z-m>0</z-m>
         </center>
     </animation>
-    
+
     <animation>
         <type>translate</type>
         <object-name>indicator</object-name>
@@ -94,12 +94,12 @@
         <object-name>auto</object-name>
         <visible>true</visible>
         <action>
-          <button>0</button>
-          <repeatable>false</repeatable>
-          <binding>
-            <command>property-toggle</command>
-            <property>instrumentation/kcs55/ka51/slaved</property>
-          </binding>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/kcs55/ka51/slaved</property>
+            </binding>
         </action>
     </animation>
 
@@ -110,20 +110,20 @@
         <object-name>direction.pick.ccw</object-name>
         <visible>true</visible>
         <action>
-          <button>0</button>
-          <repeatable>false</repeatable>
-          <binding>
-            <command>property-assign</command>
-            <property>instrumentation/kcs55/ka51/manual-slave</property>
-            <value type="int">-1</value>
-          </binding>
-          <mod-up>
+            <button>0</button>
+            <repeatable>false</repeatable>
             <binding>
-              <command>property-assign</command>
-              <property>instrumentation/kcs55/ka51/manual-slave</property>
-              <value type="int">0</value>
+                <command>property-assign</command>
+                <property>instrumentation/kcs55/ka51/manual-slave</property>
+                <value type="int">-1</value>
             </binding>
-          </mod-up>
+            <mod-up>
+                <binding>
+                    <command>property-assign</command>
+                    <property>instrumentation/kcs55/ka51/manual-slave</property>
+                    <value type="int">0</value>
+                </binding>
+            </mod-up>
         </action>
     </animation>
 
@@ -134,20 +134,20 @@
         <object-name>direction.pick.cw</object-name>
         <visible>true</visible>
         <action>
-          <button>0</button>
-          <repeatable>false</repeatable>
-          <binding>
-            <command>property-assign</command>
-            <property>instrumentation/kcs55/ka51/manual-slave</property>
-            <value type="int">1</value>
-          </binding>
-          <mod-up>
+            <button>0</button>
+            <repeatable>false</repeatable>
             <binding>
-              <command>property-assign</command>
-              <property>instrumentation/kcs55/ka51/manual-slave</property>
-              <value type="int">0</value>
+                <command>property-assign</command>
+                <property>instrumentation/kcs55/ka51/manual-slave</property>
+                <value type="int">1</value>
             </binding>
-          </mod-up>
+            <mod-up>
+                <binding>
+                    <command>property-assign</command>
+                    <property>instrumentation/kcs55/ka51/manual-slave</property>
+                    <value type="int">0</value>
+                </binding>
+            </mod-up>
         </action>
     </animation>
 
@@ -156,13 +156,13 @@
         <object-name>auto.pick</object-name>
         <visible>false</visible>
         <action>
-          <button>0</button>
-          <repeatable>false</repeatable>
-          <binding>
-            <command>property-assign</command>
-            <property>instrumentation/kcs55/ka51/slaved</property>
-            <value type="bool">1</value>
-          </binding>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/kcs55/ka51/slaved</property>
+                <value type="bool">1</value>
+            </binding>
         </action>
     </animation>
 
@@ -171,13 +171,13 @@
         <object-name>man.pick</object-name>
         <visible>false</visible>
         <action>
-          <button>0</button>
-          <repeatable>false</repeatable>
-          <binding>
-            <command>property-assign</command>
-            <property>instrumentation/kcs55/ka51/slaved</property>
-            <value type="bool">0</value>
-          </binding>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/kcs55/ka51/slaved</property>
+                <value type="bool">0</value>
+            </binding>
         </action>
     </animation>
 

@@ -8,8 +8,8 @@
         <object-name>RMI.compass</object-name>       
         <object-name>VORneedle</object-name>
         <object-name>ADFneedle</object-name>    
-    <emission>
-          <red>0.79</red>
+        <emission>
+            <red>0.79</red>
             <green>0.39</green>
             <blue>0.198</blue>
             <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
@@ -59,11 +59,11 @@
             <z>0</z>
         </axis>
     </animation>
-    
-<animation>
-<type>range</type>
-<min-m>0</min-m>
-<max-m>5</max-m>
-</animation>
+
+    <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>5</max-m>
+    </animation>
 
 </PropertyList>

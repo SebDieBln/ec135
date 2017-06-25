@@ -19,11 +19,11 @@
 <PropertyList>
 
 
-<transponder>
-  <id-code type="int">0</id-code>
-  <goodcode type="bool">0</goodcode>
-  <ready type="double">0</ready>
-  <replying type="bool">0</replying>
-</transponder>
+    <transponder>
+        <id-code type="int">0</id-code>
+        <goodcode type="bool">0</goodcode>
+        <ready type="double">0</ready>
+        <replying type="bool">0</replying>
+    </transponder>
 
 </PropertyList>

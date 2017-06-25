@@ -5,20 +5,20 @@ Syd Adams
 -->
 <PropertyList>
 
-<path>STBYai.ac</path>
+    <path>STBYai.ac</path>
 
-<animation>
-    <type>material</type>
-    <object-name>STBYai.face</object-name>
-    <object-name>STBYai.ball</object-name>
-    <object-name>Plane</object-name>
+    <animation>
+        <type>material</type>
+        <object-name>STBYai.face</object-name>
+        <object-name>STBYai.ball</object-name>
+        <object-name>Plane</object-name>
         <emission>
-          <red>0.79</red>
+            <red>0.79</red>
             <green>0.39</green>
             <blue>0.198</blue>
-      <factor-prop>systems/electrical/outputs/stdby-instrument-lights-norm</factor-prop>
-    </emission>
-  </animation>
+            <factor-prop>systems/electrical/outputs/stdby-instrument-lights-norm</factor-prop>
+        </emission>
+    </animation>
 
     <animation>
         <type>texmultiple</type>
@@ -81,13 +81,13 @@ Syd Adams
         </center>
     </animation>
 
-    
-    
-<animation>
-  <type>noshadow</type>
-	<object-name>STBYai.ball</object-name>
-	<object-name>cage.flag</object-name>
-	<object-name>STBYai.rollneedle</object-name>
- </animation>
+
+
+    <animation>
+        <type>noshadow</type>
+        <object-name>STBYai.ball</object-name>
+        <object-name>cage.flag</object-name>
+        <object-name>STBYai.rollneedle</object-name>
+    </animation>
 
 </PropertyList>

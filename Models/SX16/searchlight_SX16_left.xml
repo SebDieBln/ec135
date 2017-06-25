@@ -23,71 +23,71 @@ by Heiko Schulz Heiko.H.Schulz@gmx.net
 
 <PropertyList>
 
-  <path>Aircraft/ec135/Models/SX16/SX16.ac</path>
+    <path>Aircraft/ec135/Models/SX16/SX16.ac</path>
 
- 
 
-  <effect>
-    <inherits-from>Aircraft/ec135/Models/Effects/ec135reflectglas-uber</inherits-from>
-    <object-name>slight_filter_glass</object-name>
-  </effect>
 
-  <!-- searchlight grouping, select conditions -->
-  
-  <animation>
-    <name>searchlight_filter</name>
-    <object-name>slight_filter</object-name>
-    <object-name>slight_filter_glass</object-name>
-  </animation>
+    <effect>
+        <inherits-from>Aircraft/ec135/Models/Effects/ec135reflectglas-uber</inherits-from>
+        <object-name>slight_filter_glass</object-name>
+    </effect>
 
-  
+    <!-- searchlight grouping, select conditions -->
 
-  
+    <animation>
+        <name>searchlight_filter</name>
+        <object-name>slight_filter</object-name>
+        <object-name>slight_filter_glass</object-name>
+    </animation>
 
-  <!-- searchlight movements -->
-  <animation>
-    <type>rotate</type>
-    <object-name>searchlight-gimbal</object-name>
-    <object-name>searchlight</object-name>
-    <object-name>searchlight_filter</object-name>
-    <object-name>slight_disk</object-name>
-    <property>/sim/model/ec135/searchlight-heading-deg</property>
-    <factor> 1 </factor>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>0</y>
-      <z>1</z>
-    </axis>
-  </animation>
 
-  <animation>
-    <type>rotate</type>
-    <object-name>searchlight</object-name>
-    <object-name>searchlight_filter</object-name>
-    <object-name>slight_disk</object-name>
-      <property>/sim/model/ec135/searchlight-elevation-deg</property>
-    <factor> 1 </factor>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
-    </axis>
-  </animation>
 
-  
 
-  <!-- pick animations -->
-  <!-- toggle searchlight power on/off 
+
+    <!-- searchlight movements -->
+    <animation>
+        <type>rotate</type>
+        <object-name>searchlight-gimbal</object-name>
+        <object-name>searchlight</object-name>
+        <object-name>searchlight_filter</object-name>
+        <object-name>slight_disk</object-name>
+        <property>/sim/model/ec135/searchlight-heading-deg</property>
+        <factor> 1 </factor>
+        <center>
+            <x-m> 0 </x-m>
+            <y-m> 0 </y-m>
+            <z-m> 0 </z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>searchlight</object-name>
+        <object-name>searchlight_filter</object-name>
+        <object-name>slight_disk</object-name>
+        <property>/sim/model/ec135/searchlight-elevation-deg</property>
+        <factor> 1 </factor>
+        <center>
+            <x-m> 0 </x-m>
+            <y-m> 0 </y-m>
+            <z-m> 0 </z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+
+    <!-- pick animations -->
+    <!-- toggle searchlight power on/off 
   <animation>
     <type>pick</type>
     <object-name>slight_body</object-name>
@@ -107,44 +107,44 @@ by Heiko Schulz Heiko.H.Schulz@gmx.net
 
 
 
-  
 
-  
 
-  <!-- rotation filter -->
-  <animation>
-    <type>rotate</type>
-    <object-name>searchlight_filter</object-name>
-    <property>sim/model/ec135/searchlight-filter/position-norm</property>
-    <factor> 92.0 </factor>
-    <center>
-      <x-m> -0.059 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.066 </z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
-    </axis>
-  </animation>
 
-  <animation>
-    <type>pick</type>
-    <object-name>searchlight_filter</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>nasal</command>
-        <script>
+
+    <!-- rotation filter -->
+    <animation>
+        <type>rotate</type>
+        <object-name>searchlight_filter</object-name>
+        <property>sim/model/ec135/searchlight-filter/position-norm</property>
+        <factor> 92.0 </factor>
+        <center>
+            <x-m> -0.059 </x-m>
+            <y-m>  0.000 </y-m>
+            <z-m>  0.066 </z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>searchlight_filter</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>
           ec135.toggle_cycle_filter();
-        </script>
-      </binding>
-    </action>
-  </animation>
+                </script>
+            </binding>
+        </action>
+    </animation>
 
- 
+
 
 </PropertyList>
 

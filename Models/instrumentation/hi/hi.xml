@@ -2,14 +2,14 @@
 
 <PropertyList>
 
-<path>hi.ac</path>
+    <path>hi.ac</path>
 
-	 <animation>
+    <animation>
         <type>material</type>
-		<object-name>PIA.lubber</object-name>
-		<object-name>PIA.card</object-name>
-            <emission>
-          <red>0.79</red>
+        <object-name>PIA.lubber</object-name>
+        <object-name>PIA.card</object-name>
+        <emission>
+            <red>0.79</red>
             <green>0.39</green>
             <blue>0.198</blue>
             <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
@@ -27,9 +27,9 @@
         </axis>
     </animation>
 
-<animation>
-  <type>noshadow</type>
+    <animation>
+        <type>noshadow</type>
         <object-name>PIA.card</object-name>
-</animation>
+    </animation>
 
 </PropertyList>
