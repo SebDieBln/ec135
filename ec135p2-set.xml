@@ -530,10 +530,10 @@ Thanks for all the help!
                     <dist type="float">1</dist>
                     <connected-to-property-node type="bool"/>
                     <brake-force type="float">100000</brake-force>
-                    <connected-to-ai-or-mp-callsign type ="string">*</connected-to-ai-or-mp-callsign>
-                    <end-force-x type ="float">0</end-force-x>
-                    <end-force-y type ="float">0</end-force-y>
-                    <end-force-z type ="float">0</end-force-z>
+                    <connected-to-ai-or-mp-callsign type="string">*</connected-to-ai-or-mp-callsign>
+                    <end-force-x type="float">0</end-force-x>
+                    <end-force-y type="float">0</end-force-y>
+                    <end-force-z type="float">0</end-force-z>
                 </tow>
                 <speed-in-tow-direction type="float">0</speed-in-tow-direction>
                 <open type="bool">true</open>
@@ -639,7 +639,7 @@ Thanks for all the help!
 
 
         <rotor>
-            <brake type ="double">1</brake>
+            <brake type="double">1</brake>
             <reltarget type="double">0</reltarget>
             <maxreltorque type="double">0</maxreltorque>
             <cata type="bool">0</cata>
