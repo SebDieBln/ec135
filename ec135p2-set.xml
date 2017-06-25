@@ -988,12 +988,10 @@ Thanks for all the help!
             <file>Aircraft/ec135/Models/instrumentation/vemd/VEMD.nas</file>
             <file>Aircraft/ec135/Models/instrumentation/vemd/roc.nas</file>
             <file>Aircraft/ec135/Models/instrumentation/dme/ki266.nas</file>
-            <script>
-                <![CDATA[
-	      ki266.new(0);
+            <script><![CDATA[
+              ki266.new(0);
               KCS55.new();
-            ]]>
-            </script>
+            ]]></script>
         </ec135>
         <GTX330>
             <file>Aircraft/ec135/Models/instrumentation/GTX330/GTX330.nas</file>
