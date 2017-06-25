@@ -1,5 +1,11 @@
 language: javascript
 
+addons:
+    apt:
+        packages:
+        # Needed for `xmllint`.
+        - libxml2-utils
+
 git:
     depth: 3
 

@@ -1,6 +1,11 @@
 #!/bin/bash
 
-set -ev
+set -e
 
-echo Dummy test OK!
+xmllint --version
 
+for OUTPUT in $(find . -name \*.xml)
+do
+    echo Checking XML syntax of $OUTPUT
+    xmllint --noout $OUTPUT
+done
