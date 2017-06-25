@@ -1,0 +1,7 @@
+language: javascript
+
+git:
+    depth: 3
+
+script: ./ci/travis/script.sh
+
