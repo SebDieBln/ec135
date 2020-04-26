@@ -60,7 +60,7 @@ Thanks for all the help!
 <systems>
  <path>Aircraft/ec135/Systems/systems.xml</path>
 <electrical>
-                <path></path>
+                <path/>
 </electrical>
 <autopilot>
             <path>Aircraft/ec135/filter.xml</path>
@@ -478,15 +478,15 @@ Thanks for all the help!
 
 		<help>
 			<title>EC 135 - background and help</title>
-			<line></line>
+			<line/>
 			<line>Informations about the Eurocopter EC 135</line>
-			<line></line>
+			<line/>
 			<line>Modelled after a real EC135 P2 using photorealistic images from "D-HDEC" in 2008 </line>
-			<line></line>
+			<line/>
 			<line>Help</line>
-			<line></line>
+			<line/>
 			<line>Startup</line>
-			<line></line>
+			<line/>
 			<line>toggle rotor brake -> press R-key</line>
 			<line>Mainpanel: engage Bat  and GenI + II on engine panel to ON</line>
 			<line>Overhead: switch Anticollisionlight  ON</line>
@@ -500,14 +500,14 @@ Thanks for all the help!
 			<line>Overhead: engage both transfer pumps XFER F + B ON</line>
 			<line>Navlight, strobes, landlinglights, CAT-A as required</line>
 			<line>The EC135 has to fly with SAS engaged all the times- disengaging will usually produce a caution warning on the real thing</line>
-			<line></line>
+			<line/>
 			<line>Landinglight -> l-key (Small L)</line>
 			<line>Open/ Close doors -> click the doorse</line>
 			<line>Dumps SAS -> CTR-d-Key</line>
 			<line>Reengage Pitch/ Roll SAS -> Shift -p -Key</line>
 			<line>Reengage Yaw SAS -> CTR -e -Key</line>
 			<line>CAT A Button (increase rotor speed up to + 3%- use only below 55ktn IAS!) -> a-Key</line>
-			<line></line>
+			<line/>
 			
 
 
@@ -523,7 +523,7 @@ Thanks for all the help!
 					<elastic-constant type="float">10000</elastic-constant>
 					<weight-per-m-kg-m type="float">1</weight-per-m-kg-m>
 					<dist type="float">1</dist>
-					<connected-to-property-node type="bool"></connected-to-property-node>
+					<connected-to-property-node type="bool"/>
 					<brake-force type="float">100000</brake-force>
 					<connected-to-ai-or-mp-callsign type ="string">*</connected-to-ai-or-mp-callsign>
 					<end-force-x type ="float">0</end-force-x>
