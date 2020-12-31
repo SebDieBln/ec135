@@ -107,65 +107,15 @@
         <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
     </cruise>
 
-<!--cyclicail should be the way round?
--->
+    <!--cyclicail should be the way round? -->
 
-    <rotor name="main" x="-2.973" y="0.0" z="1.751" 
-        nx="0.087" ny="0" nz="1." fx="1" fy="0" fz="0" ccw="1"
-        maxcollective="17.3" mincollective="0.0"
-        mincyclicele="-7.8" maxcyclicele="14"
-        mincyclicail="-6.6" maxcyclicail="7.9"
-        diameter="10.2" 
-        numblades="4" 
-        weightperblade="83.7" 
-        relbladecenter="0.5"
-        dynamic="0.51" rpm="395" phi0="45" 
-        rellenflaphinge="0.09" delta3="0"
-        delta="0.18"
-        pitch-a="10"
-        pitch-b="15"
-        flapmin="-13"
-        flapmax="13"
-        flap0="-5"
-        flap0factor="0"
-        notorque="0"
-        dragfactor="0.30"
-        translift-ve="20"
-        translift-maxfactor="1.55"
-        ground-effect-constant="0.1"
-        twist="-10.2"
-        taper="1"
-        chord="0.30"
-        number-of-segments="8"
-        number-of-parts="8"
-        rel-len-where-incidence-is-measured="0.7"
-        rel-len-blade-start="0.29"
-        
-        airfoil-incidence-no-lift="-0.1"
-        airfoil-lift-coefficient="4.55"
-        airfoil-drag-coefficient0="0.0074"
-        airfoil-drag-coefficient1="0.15"
-        incidence-stall-zero-speed="16"
-        incidence-stall-half-sonic-speed="15.5"
-        lift-factor-stall="0.18"
-        stall-change-over="5.5"
-        drag-factor-stall="2.0"
-        cyclic-factor="1.1"
-        rotor-correction-factor="0.9"
-        downwashfactor="1.0"
-        >
+    <rotor name="main" x="-2.973" y="0.0" z="1.751" nx="0.087" ny="0" nz="1." fx="1" fy="0" fz="0" ccw="1" maxcollective="17.3" mincollective="0.0" mincyclicele="-7.8" maxcyclicele="14" mincyclicail="-6.6" maxcyclicail="7.9" diameter="10.2" numblades="4" weightperblade="83.7" relbladecenter="0.5" dynamic="0.51" rpm="395" phi0="45" rellenflaphinge="0.09" delta3="0" delta="0.18" pitch-a="10" pitch-b="15" flapmin="-13" flapmax="13" flap0="-5" flap0factor="0" notorque="0" dragfactor="0.30" translift-ve="20" translift-maxfactor="1.55" ground-effect-constant="0.1" twist="-10.2" taper="1" chord="0.30" number-of-segments="8" number-of-parts="8" rel-len-where-incidence-is-measured="0.7" rel-len-blade-start="0.29" airfoil-incidence-no-lift="-0.1" airfoil-lift-coefficient="4.55" airfoil-drag-coefficient0="0.0074" airfoil-drag-coefficient1="0.15" incidence-stall-zero-speed="16" incidence-stall-half-sonic-speed="15.5" lift-factor-stall="0.18" stall-change-over="5.5" drag-factor-stall="2.0" cyclic-factor="1.1" rotor-correction-factor="0.9" downwashfactor="1.0">
     <!--lst values: 1.35;0.1;-0.3;3.80;0.0074;0.04; to-do: play with lift-coeff and translift-factor-->
     <control-input axis="/controls/flight/aileron-trim" control="CYCLICAIL"/>
-    <control-input axis="/controls/flight/fcs/roll" control="CYCLICAIL"
-                    src0="-1.0" src1="1.0"
-                    dst0="-1.0" dst1="1.0"/>
+    <control-input axis="/controls/flight/fcs/roll" control="CYCLICAIL" src0="-1.0" src1="1.0" dst0="-1.0" dst1="1.0"/>
     <control-input axis="/controls/flight/elevator-trim" control="CYCLICELE"/>
-    <control-input axis="/controls/flight/fcs/pitch" control="CYCLICELE"
-                    src0="-1.0" src1="1.0"
-                    dst0="-1.0" dst1="1.0"/>
-    <control-input axis="/controls/engines/engine[0]/throttle" control="COLLECTIVE"
-                    src0="0.0" src1="1.0"
-                    dst0="1.0" dst1="-1"/>
+    <control-input axis="/controls/flight/fcs/pitch" control="CYCLICELE" src0="-1.0" src1="1.0" dst0="-1.0" dst1="1.0"/>
+    <control-input axis="/controls/engines/engine[0]/throttle" control="COLLECTIVE" src0="0.0" src1="1.0" dst0="1.0" dst1="-1"/>
     <!--without SAS-system
     <control-input axis="/controls/flight/aileron-trim" control="CYCLICAIL"/>
     <control-input axis="/controls/flight/aileron" control="CYCLICAIL"
@@ -183,40 +133,9 @@
 
 
 <!--flapmin/max guessed from a real fenestron with 1-3degrees-->
-<rotor name="tail" x="-8.844" y="-0.07" z="0.873"
-    nx="0.00" ny="-1" nz="0.00" fx="1" fy="0" fz="0" ccw="1"
-    maxcollective="34.2" mincollective="-16.8"
-    diameter="1" numblades="10" weightperblade="0.64" relbladecenter="0.5"
-    dynamic="1.4" rpm="3584" rellenflaphinge="0.35" delta3="0" translift="0" delta="0.5" twist="-7.0" 
-    pitch-a="10"
-    pitch-b="15"
-    flapmin="-2.0"
-    flapmax="2.0"
-    flap0="0"
-    airfoil-lift-coefficient="5.1"
-    airfoil-drag-coefficient0="0.0074"
-    airfoil-drag-coefficient1="0.9"
-    notorque="0"
-    taper="1"
-    chord="0.05"
-    number-of-segments="5"
-    number-of-parts="4"
-    rel-len-blade-start="0.35"
-    airfoil-incidence-no-lift="-0.3"
-    incidence-stall-zero-speed="34"
-    incidence-stall-half-sonic-speed="33"
-    lift-factor-stall="0.18"
-    stall-change-over="5.5"
-    drag-factor-stall="8"
-    rotor-correction-factor="0.8"
-    downwashfactor="1.0"
-    >
-    <control-input axis="/controls/flight/fcs/yaw" control="COLLECTIVE" invert="true"
-                    src0="-1.0" src1="1.0"
-                    dst0="-1.0" dst1="1.0"/>
-    <control-input axis="/controls/flight/fcs/tail-rotor/throttle" control="COLLECTIVE" invert="true"
-                    src0="0.0" src1="1.0"
-                    dst0="0.0" dst1="1.0"/>
+<rotor name="tail" x="-8.844" y="-0.07" z="0.873" nx="0.00" ny="-1" nz="0.00" fx="1" fy="0" fz="0" ccw="1" maxcollective="34.2" mincollective="-16.8" diameter="1" numblades="10" weightperblade="0.64" relbladecenter="0.5" dynamic="1.4" rpm="3584" rellenflaphinge="0.35" delta3="0" translift="0" delta="0.5" twist="-7.0" pitch-a="10" pitch-b="15" flapmin="-2.0" flapmax="2.0" flap0="0" airfoil-lift-coefficient="5.1" airfoil-drag-coefficient0="0.0074" airfoil-drag-coefficient1="0.9" notorque="0" taper="1" chord="0.05" number-of-segments="5" number-of-parts="4" rel-len-blade-start="0.35" airfoil-incidence-no-lift="-0.3" incidence-stall-zero-speed="34" incidence-stall-half-sonic-speed="33" lift-factor-stall="0.18" stall-change-over="5.5" drag-factor-stall="8" rotor-correction-factor="0.8" downwashfactor="1.0">
+    <control-input axis="/controls/flight/fcs/yaw" control="COLLECTIVE" invert="true" src0="-1.0" src1="1.0" dst0="-1.0" dst1="1.0"/>
+    <control-input axis="/controls/flight/fcs/tail-rotor/throttle" control="COLLECTIVE" invert="true" src0="0.0" src1="1.0" dst0="0.0" dst1="1.0"/>
     <!--without SAS-System
     <control-input axis="/controls/flight/rudder-trim" control="COLLECTIVE" invert="true"/>
     <control-input axis="/controls/flight/rudder" control="COLLECTIVE" invert="true"
@@ -227,110 +146,51 @@
 </rotor>
 
 
-<rotorgear
-    max-power-engine="1218"
-    max-power-rotor-brake="100"
-    rotorgear-friction="5.2"
-    engine-prop-factor="0.015"
-    engine-accel-limit="100"
-    yasimdragfactor="22.5"
-    yasimliftfactor="25"
-    >
+<rotorgear max-power-engine="1218" max-power-rotor-brake="100" rotorgear-friction="5.2" engine-prop-factor="0.015" engine-accel-limit="100" yasimdragfactor="22.5" yasimliftfactor="25">
     <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORGEARENGINEON"/>
-    <control-input axis="/controls/rotor/brake" control="ROTORBRAKE"
-                    src0="0.0" src1="1.0"
-                    dst0="0.0" dst1="1.0"/>
-    <control-input axis="/controls/rotor/reltarget" control="ROTORRELTARGET"
-                    src0="0.0" src1="2.0"
-                    dst0="0.0" dst1="2.0"/>
-    <control-input axis="/controls/rotor/maxreltorque" control="ROTORENGINEMAXRELTORQUE"
-                    src0="0.0" src1="2.0"
-                    dst0="0.0" dst1="2.0"/>
+    <control-input axis="/controls/rotor/brake" control="ROTORBRAKE" src0="0.0" src1="1.0" dst0="0.0" dst1="1.0"/>
+    <control-input axis="/controls/rotor/reltarget" control="ROTORRELTARGET" src0="0.0" src1="2.0" dst0="0.0" dst1="2.0"/>
+    <control-input axis="/controls/rotor/maxreltorque" control="ROTORENGINEMAXRELTORQUE" src0="0.0" src1="2.0" dst0="0.0" dst1="2.0"/>
 </rotorgear>
 
 
 <cockpit x="-1.88" y=".33" z="0.6"/>
 
-<fuselage ax="0.201" ay="0" az="-.162" bx="-5.3" by="0" bz="0.17" cx="3.0"  cz="0.2"
-          width="1.92" taper="0.95" midpoint="0.5" idrag="0"/>
+<fuselage ax="0.201" ay="0" az="-.162" bx="-5.3" by="0" bz="0.17" cx="3.0"  cz="0.2" width="1.92" taper="0.95" midpoint="0.5" idrag="0"/>
 
-<fuselage ax="-5.262" ay="0" az="0.698" bx="-9.78" by="0" bz=".757" cz="0.25" cx="2.5" 
-          width="0.47" taper="0.9" midpoint="0.05" idrag="0.0"/>
+<fuselage ax="-5.262" ay="0" az="0.698" bx="-9.78" by="0" bz=".757" cz="0.25" cx="2.5" width="0.47" taper="0.9" midpoint="0.05" idrag="0.0"/>
     
 
 
 
 <!-- fin-->
-<vstab x="-8.604" y="0" z="0.962" 
-    taper=".6" 
-    effectiveness="0.5"
-    length="1.7" 
-    chord="1.3" 
-    sweep="20"
-    incidence="5">
+<vstab x="-8.604" y="0" z="0.962" taper=".6" effectiveness="0.5" length="1.7" chord="1.3" sweep="20" incidence="5">
     <stall aoa="16" width="4" peak="1.5"/>
 </vstab>
 
 <!--bumper-->
-<vstab x="-8.8928" y="0" z="0.538" 
-    dihedral="-90"
-    taper=".5" 
-    effectiveness="0.5"
-    length="0.65" 
-    chord="1.3" 
-    sweep="15"
-    incidence="-5">
+<vstab x="-8.8928" y="0" z="0.538" dihedral="-90" taper=".5" effectiveness="0.5" length="0.65" chord="1.3" sweep="15" incidence="-5">
     <stall aoa="16" width="4" peak="1.5"/>
 </vstab>
 
-<vstab x="-7.481" y="1.27" z=".672" 
-    taper="0.7" 
-    effectiveness="0.5"
-    length=".26" 
-    chord=".50" 
-    incidence="4"
-    sweep="22">
+<vstab x="-7.481" y="1.27" z=".672" taper="0.7" effectiveness="0.5" length=".26" chord=".50" incidence="4" sweep="22">
     <stall aoa="16" width="4" peak="1.5"/>
 </vstab>
 
-<vstab x="-7.481" y="1.27" z=".672" 
-    taper="0.7" 
-    effectiveness="0.5"
-    length="-.52" 
-    chord=".50" 
-    incidence="4"
-    sweep="-30">
+<vstab x="-7.481" y="1.27" z=".672" taper="0.7" effectiveness="0.5" length="-.52" chord=".50" incidence="4" sweep="-30">
     <stall aoa="16" width="4" peak="1.5"/>
 </vstab>
 
-<vstab x="-7.481" y="-1.27" z=".672" 
-    taper="0.7" 
-    effectiveness="0.5"
-    length=".26" 
-    chord=".50" 
-    incidence="4"
-    sweep="22">
+<vstab x="-7.481" y="-1.27" z=".672" taper="0.7" effectiveness="0.5" length=".26" chord=".50" incidence="4" sweep="22">
     <stall aoa="16" width="4" peak="1.5"/>
 </vstab>
 
-<vstab x="-7.481" y="-1.27" z=".672" 
-    taper="0.7" 
-    effectiveness="0.5"
-    length="-.52" 
-    chord=".50" 
-    incidence="4"
-    sweep="-30">
+<vstab x="-7.481" y="-1.27" z=".672" taper="0.7" effectiveness="0.5" length="-.52" chord=".50" incidence="4" sweep="-30">
     <stall aoa="24" width="10" peak="1.5"/>
 </vstab>
 
 <!--changed incidence to -5, former -7-->
-<hstab x="-7.44" y="0.05" z="0.715"
-    taper="1.0" 
-    dihedral="0"
-    length="1.30" 
-    chord="0.36" 
-    sweep="0"
-    incidence="-5">
+<hstab x="-7.44" y="0.05" z="0.715" taper="1.0" dihedral="0" length="1.30" chord="0.36" sweep="0" incidence="-5">
     <stall aoa="27" width="0" peak="1.5"/>
 </hstab>
 
@@ -450,44 +310,44 @@
 
   
 
-<weight x="-1.196" y="-.33"  z="-0.275" mass-prop="/sim/weight[0]/weight-lb"/>    <!-- pilot -->
+<weight x="-1.196" y="-.33" z="-0.275" mass-prop="/sim/weight[0]/weight-lb"/>    <!-- pilot -->
 <weight x="-1.196" y=".33" z="-0.275" mass-prop="/sim/weight[1]/weight-lb"/>    <!-- co-pilot -->
-<weight x="-2.073" y="-.33"  z="-0.275" mass-prop="/sim/weight[2]/weight-lb"/>    <!-- right passenger -->
-<weight x="-2.073" y="0"    z="-0.275" mass-prop="/sim/weight[3]/weight-lb"/>    <!-- middle passenger -->
+<weight x="-2.073" y="-.33" z="-0.275" mass-prop="/sim/weight[2]/weight-lb"/>    <!-- right passenger -->
+<weight x="-2.073" y="0" z="-0.275" mass-prop="/sim/weight[3]/weight-lb"/>    <!-- middle passenger -->
 <weight x="-2.073" y=".33" z="-0.275" mass-prop="/sim/weight[4]/weight-lb"/>    <!-- left passenger -->
-<weight x="-3.5" y="0"    z="-0.275" mass-prop="/sim/weight[5]/weight-lb"/>    <!-- patient/load -->
+<weight x="-3.5" y="0" z="-0.275" mass-prop="/sim/weight[5]/weight-lb"/>    <!-- patient/load -->
 
 <!--weight by the additional things like emergency floats, skibox, FLIR...To DO: add the missing things-->
-<weight x="-3.198" y="0.0"   z="-0.078" size="0.0" mass-prop="/sim/model/ec135/external/HEMS/weight-lb"/>
-<weight x="-3.198" y="0.0"   z="-0.078" size="0.0" mass-prop="/sim/model/ec135/external/VIP/weight-lb"/>
-<weight x="-3.198" y="0.0"   z="-0.078" size="0.0" mass-prop="/sim/model/ec135/external/Utility/weight-lb"/>
-<weight x="0.138" y="0.0"   z="-0.096" size="0.2" mass-prop="/sim/model/ec135/external/BigRadom/weight-lb"/>
-<weight x="0.138" y="0.0"   z="-0.096" size="0.1" mass-prop="/sim/model/ec135/external/smallradom/weight-lb"/>
-<weight x="0.249" y="0.0"   z="-0.337" size="0.2" mass-prop="/sim/model/ec135/external/searchlight_front/weight-lb"/>
-<weight x="-0.538" y="0.924"   z="-0.837" size="0.2" mass-prop="/sim/model/ec135/external/searchlight_left/weight-lb"/>
-<weight x="-0.571" y="-1.096"   z="-0.984" size="0.5" mass-prop="/sim/model/ec135/external/FLIR/weight-lb"/>
-<weight x="0.031" y="-0.397"   z="-0.772" size="0.4" mass-prop="/sim/model/ec135/external/mirror/weight-lb"/>
-<weight x="-1.244" y="0.0"   z="1.009" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_up/weight-lb"/>
-<weight x="-0.212" y="0.0"   z="-0.518" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_down/weight-lb"/>
-<weight x="-2.197" y="0.0"   z="1.052" size="0.2" mass-prop="/sim/model/ec135/external/sandfilter/weight-lb"/>
-<weight x="-3.9367" y="0.0"   z="1.060" size="0.0" mass-prop="/sim/model/ec135/external/IBF/weight-lb"/>
-<weight x="-2.180" y="0.6"   z="0.625" size="0.2" mass-prop="/sim/model/ec135/external/winch/weight-lb"/>
-<weight x="-0.755" y="0.316"   z="-0.694" size="0.0" mass-prop="/sim/model/ec135/external/SLLightL/weight-lb"/>
-<weight x="-0.755" y="-0.316"   z="-0.694" size="0.0" mass-prop="/sim/model/ec135/external/SLLightR/weight-lb"/>
-<weight x="-1.368" y="-0.311"   z="-0.956" size="0.1" mass-prop="/sim/model/ec135/external/loudspeaker/weight-lb"/>
-<weight x="-1.368" y="0.357"   z="-1.034" size="0.1" mass-prop="/sim/model/ec135/external/hellas/weight-lb"/>
-<weight x="-2.5218" y="0.0"   z="-1.123" size="0.1" mass-prop="/sim/model/ec135/external/snowboard_lowskid/weight-lb"/>
-<weight x="-0.801" y="0.0"   z="-1.161" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_skid/weight-lb"/>
-<weight x="-3.004" y="0.0"   z="-1.055" size="0.1" mass-prop="/sim/model/ec135/external/longskid_floats/weight-lb"/>
-<weight x="-2.339" y="0.0"   z="-1.114" size="0.1" mass-prop="/sim/model/ec135/external/midskid/weight-lb"/>
-<weight x="-2.5218" y="0.0"   z="-1.123" size="0.1" mass-prop="/sim/model/ec135/external/snowboard_midskid/weight-lb"/>
-<weight x="-0.801" y="0.0"   z="-1.161" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_midskid/weight-lb"/>
-<weight x="-2.339" y="0.0"   z="-1.223" size="0.1" mass-prop="/sim/model/ec135/external/highskid/weight-lb"/>
-<weight x="-2.521" y="0.0"   z="-1.309" size="0.1" mass-prop="/sim/model/ec135/external/snowboard_highskid/weight-lb"/>
-<weight x="-0.801" y="0.0"   z="-1.413" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_highskid/weight-lb"/>
-<weight x="-2.481" y="0.0"   z="-0.852" size="0.0" mass-prop="/sim/model/ec135/external/multifunctioncarrier/weight-lb"/>
-<weight x="-2.418" y="0.0"   z="-0.901" size="0.0" mass-prop="/sim/model/ec135/external/DoubleCargoHook/weight-lb"/>
-<weight x="-4.767" y="-0.052"   z="-0.164" size="0.0" mass-prop="/sim/model/ec135/external/buckle/weight-lb"/>
+<weight x="-3.198" y="0.0" z="-0.078" size="0.0" mass-prop="/sim/model/ec135/external/HEMS/weight-lb"/>
+<weight x="-3.198" y="0.0" z="-0.078" size="0.0" mass-prop="/sim/model/ec135/external/VIP/weight-lb"/>
+<weight x="-3.198" y="0.0" z="-0.078" size="0.0" mass-prop="/sim/model/ec135/external/Utility/weight-lb"/>
+<weight x="0.138" y="0.0" z="-0.096" size="0.2" mass-prop="/sim/model/ec135/external/BigRadom/weight-lb"/>
+<weight x="0.138" y="0.0" z="-0.096" size="0.1" mass-prop="/sim/model/ec135/external/smallradom/weight-lb"/>
+<weight x="0.249" y="0.0" z="-0.337" size="0.2" mass-prop="/sim/model/ec135/external/searchlight_front/weight-lb"/>
+<weight x="-0.538" y="0.924" z="-0.837" size="0.2" mass-prop="/sim/model/ec135/external/searchlight_left/weight-lb"/>
+<weight x="-0.571" y="-1.096" z="-0.984" size="0.5" mass-prop="/sim/model/ec135/external/FLIR/weight-lb"/>
+<weight x="0.031" y="-0.397" z="-0.772" size="0.4" mass-prop="/sim/model/ec135/external/mirror/weight-lb"/>
+<weight x="-1.244" y="0.0" z="1.009" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_up/weight-lb"/>
+<weight x="-0.212" y="0.0" z="-0.518" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_down/weight-lb"/>
+<weight x="-2.197" y="0.0" z="1.052" size="0.2" mass-prop="/sim/model/ec135/external/sandfilter/weight-lb"/>
+<weight x="-3.9367" y="0.0" z="1.060" size="0.0" mass-prop="/sim/model/ec135/external/IBF/weight-lb"/>
+<weight x="-2.180" y="0.6" z="0.625" size="0.2" mass-prop="/sim/model/ec135/external/winch/weight-lb"/>
+<weight x="-0.755" y="0.316" z="-0.694" size="0.0" mass-prop="/sim/model/ec135/external/SLLightL/weight-lb"/>
+<weight x="-0.755" y="-0.316" z="-0.694" size="0.0" mass-prop="/sim/model/ec135/external/SLLightR/weight-lb"/>
+<weight x="-1.368" y="-0.311" z="-0.956" size="0.1" mass-prop="/sim/model/ec135/external/loudspeaker/weight-lb"/>
+<weight x="-1.368" y="0.357" z="-1.034" size="0.1" mass-prop="/sim/model/ec135/external/hellas/weight-lb"/>
+<weight x="-2.5218" y="0.0" z="-1.123" size="0.1" mass-prop="/sim/model/ec135/external/snowboard_lowskid/weight-lb"/>
+<weight x="-0.801" y="0.0" z="-1.161" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_skid/weight-lb"/>
+<weight x="-3.004" y="0.0" z="-1.055" size="0.1" mass-prop="/sim/model/ec135/external/longskid_floats/weight-lb"/>
+<weight x="-2.339" y="0.0" z="-1.114" size="0.1" mass-prop="/sim/model/ec135/external/midskid/weight-lb"/>
+<weight x="-2.5218" y="0.0" z="-1.123" size="0.1" mass-prop="/sim/model/ec135/external/snowboard_midskid/weight-lb"/>
+<weight x="-0.801" y="0.0" z="-1.161" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_midskid/weight-lb"/>
+<weight x="-2.339" y="0.0" z="-1.223" size="0.1" mass-prop="/sim/model/ec135/external/highskid/weight-lb"/>
+<weight x="-2.521" y="0.0" z="-1.309" size="0.1" mass-prop="/sim/model/ec135/external/snowboard_highskid/weight-lb"/>
+<weight x="-0.801" y="0.0" z="-1.413" size="0.1" mass-prop="/sim/model/ec135/external/wirecutter_highskid/weight-lb"/>
+<weight x="-2.481" y="0.0" z="-0.852" size="0.0" mass-prop="/sim/model/ec135/external/multifunctioncarrier/weight-lb"/>
+<weight x="-2.418" y="0.0" z="-0.901" size="0.0" mass-prop="/sim/model/ec135/external/DoubleCargoHook/weight-lb"/>
+<weight x="-4.767" y="-0.052" z="-0.164" size="0.0" mass-prop="/sim/model/ec135/external/buckle/weight-lb"/>
 
 <thruster x="-2.973" y="0.0" z="1.751" vx="1" vy="0" vz="0" thrust="1000">
     <control-input axis="/rotors/main/vibration/longitudinal" src0="-1" src1="1" dst0="-1" dst1="1" control="THROTTLE"/>
