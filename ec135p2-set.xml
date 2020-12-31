@@ -75,13 +75,15 @@ Thanks for all the help!
         <multiplay n="0">
             <chat_display>1</chat_display>
             <generic n="0">
-                <float n="0" alias="/position/gear-agl-m"/><!-- rotor particles -->
-                <float n="1" alias="/orientation/pitch-deg"/><!-- rotor particles -->
-                <float n="2" alias="/orientation/roll-deg"/><!-- rotor particles -->
-                <float n="3" alias="/environment/aircraft-effects/wash-strength"/><!-- rotor particles -->
-                <float n="4" alias="/rotors/main/rpm"/><!-- rotor particles - check if needed since it should be standard mp value -->
+                <!-- rotor particles -->
+                <float n="0" alias="/position/gear-agl-m"/>
+                <float n="1" alias="/orientation/pitch-deg"/>
+                <float n="2" alias="/orientation/roll-deg"/>
+                <float n="3" alias="/environment/aircraft-effects/wash-strength"/>
+                <!-- rotor particles - check if needed since it should be standard mp value -->
+                <float n="4" alias="/rotors/main/rpm"/>
 
-                <int n="1" alias="/gear/gear/ground-is-solid"/><!-- rotor particles -->
+                <int n="1" alias="/gear/gear/ground-is-solid"/>
             </generic>
         </multiplay>
 
@@ -113,12 +115,15 @@ Thanks for all the help!
                 <Utility>false</Utility>
                 <hide-gsdi>true</hide-gsdi>
                 <BigRadom>false</BigRadom>
-                <nose>false</nose><!--nose without frontlight-->
+                <!--nose without frontlight-->
+                <nose>false</nose>
                 <!--or-->
                 <smallradom>false</smallradom>
                 <!--or-->
-                <nosefl>true</nosefl><!--nose with frontlight-->
-                <searchlight_front>false</searchlight_front><!--only without radom and without nosefl-->
+                <!--nose with frontlight-->
+                <nosefl>true</nosefl>
+                <!--only without radom and without nosefl-->
+                <searchlight_front>false</searchlight_front>
                 <searchlight_left>false</searchlight_left>
                 <FLIR>false</FLIR>
                 <windscreen_tri>true</windscreen_tri>
@@ -133,8 +138,10 @@ Thanks for all the help!
                 <!--or-->
                 <nonIBF>false</nonIBF>
                 <winch>false</winch>
-                <SLLightR>false</SLLightR><!--Retractablelanding/SearchlightRight-->
-                <SLLightL>true</SLLightL><!--Retractablelanding/SearchlightLEFT-->
+                <!--Retractablelanding/SearchlightRight-->
+                <SLLightR>false</SLLightR>
+                <!--Retractablelanding/SearchlightLEFT-->
+                <SLLightL>true</SLLightL>
                 <loudspeaker>false</loudspeaker>
                 <hellas>false</hellas>
                 <lowskid>1</lowskid>
@@ -154,14 +161,18 @@ Thanks for all the help!
                 <!--steps-->
                 <standardstep>true</standardstep>
                 <!--or-->
-                <multifunctioncarrier>false</multifunctioncarrier><!--in use with FLIR etc...)-->
+                <!--in use with FLIR etc...)-->
+                <multifunctioncarrier>false</multifunctioncarrier>
                 <!--or-->
                 <roundstep>false</roundstep>
                 <DoubleCargoHook>false</DoubleCargoHook>
-                <buckle>true</buckle><!--reardoor_buckle-->
+                <!--reardoor_buckle-->
+                <buckle>true</buckle>
                 <!--reardoors-->
-                <reardoor_winR>false</reardoor_winR><!--reardoor with window-->
-                <reardoor_winL>false</reardoor_winL><!--reardoor with window-->
+                <!--reardoor with window-->
+                <reardoor_winR>false</reardoor_winR>
+                <!--reardoor with window-->
+                <reardoor_winL>false</reardoor_winL>
                 <reardoorL>true</reardoorL>
                 <reardoorR>true</reardoorR>
 
@@ -224,9 +235,12 @@ Thanks for all the help!
             <type>lookfrom</type>
             <internal type="bool">true</internal>
             <config>
-                <x-offset-m type="double">0.42</x-offset-m><!--left-->
-                <y-offset-m type="double">0.60</y-offset-m><!--up-->
-                <z-offset-m type="double">1.25</z-offset-m><!--back-->
+                <!--left-->
+                <x-offset-m type="double">0.42</x-offset-m>
+                <!--up-->
+                <y-offset-m type="double">0.60</y-offset-m>
+                <!--back-->
+                <z-offset-m type="double">1.25</z-offset-m>
                 <pitch-offset-deg>-20</pitch-offset-deg>
                 <default-field-of-view-deg type="double">94.0</default-field-of-view-deg>
                 <limits>
