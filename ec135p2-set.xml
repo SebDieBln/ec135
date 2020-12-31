@@ -487,7 +487,7 @@ Thanks for all the help!
 			<line/>
 			<line>Startup</line>
 			<line/>
-			<line>toggle rotor brake -> press R-key</line>
+			<line>toggle rotor brake -&gt; press R-key</line>
 			<line>Mainpanel: engage Bat  and GenI + II on engine panel to ON</line>
 			<line>Overhead: switch Anticollisionlight  ON</line>
 			<line>Overhead: engage both prime pumps PRIME I + II ON</line>
@@ -501,12 +501,12 @@ Thanks for all the help!
 			<line>Navlight, strobes, landlinglights, CAT-A as required</line>
 			<line>The EC135 has to fly with SAS engaged all the times- disengaging will usually produce a caution warning on the real thing</line>
 			<line/>
-			<line>Landinglight -> l-key (Small L)</line>
-			<line>Open/ Close doors -> click the doorse</line>
-			<line>Dumps SAS -> CTR-d-Key</line>
-			<line>Reengage Pitch/ Roll SAS -> Shift -p -Key</line>
-			<line>Reengage Yaw SAS -> CTR -e -Key</line>
-			<line>CAT A Button (increase rotor speed up to + 3%- use only below 55ktn IAS!) -> a-Key</line>
+			<line>Landinglight -&gt; l-key (Small L)</line>
+			<line>Open/ Close doors -&gt; click the doorse</line>
+			<line>Dumps SAS -&gt; CTR-d-Key</line>
+			<line>Reengage Pitch/ Roll SAS -&gt; Shift -p -Key</line>
+			<line>Reengage Yaw SAS -&gt; CTR -e -Key</line>
+			<line>CAT A Button (increase rotor speed up to + 3%- use only below 55ktn IAS!) -&gt; a-Key</line>
 			<line/>
 			
 
